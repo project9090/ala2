@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jaithra Mehta Ala 2</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(-45deg, #f3e5f5, #e1f5fe, #fff8e1, #fce4ec);
+      background-size: 400% 400%;
+      animation: bgMove 20s ease infinite;
+      position: relative;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    #movingText {
+      font-size: 36px;
+      font-weight: 600;
+      position: absolute;
+      top: 40%;
+      white-space: nowrap;
+      animation: moveText 10s linear infinite, textColor 8s ease-in-out infinite;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    @keyframes moveText {
+      0% { left: -30%; }
+      50% { left: 50%; transform: translateX(-50%); }
+      100% { left: 110%; }
+    }
+
+    @keyframes textColor {
+      0% { color: #f06292; }
+      25% { color: #9575cd; }
+      50% { color: #4dd0e1; }
+      75% { color: #aed581; }
+      100% { color: #ffb74d; }
+    }
+
+    .background-image {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://www.transparenttextures.com/patterns/connected.png');
+      opacity: 0.1;
+      animation: floatImg 15s ease-in-out infinite;
+    }
+
+    @keyframes floatImg {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="movingText">Jaithra Mehta Ala 2</div>
+  <div class="background-image"></div>
+
+</body>
+</html>
